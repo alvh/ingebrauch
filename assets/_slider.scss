@@ -1,0 +1,62 @@
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    margin: 0em;
+    width: 100%;
+  }
+
+  .lothringer-slider {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .resize {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .handle {
+    /* Thin line seperator */
+    position: fixed;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    margin-left: -2px;
+    background: $theme_color;
+    cursor: ew-resize;
+
+    &:after {
+      /* Big  knob  */
+      z-index: 99;
+      position: absolute;
+      top: 50vh;
+      width: 20px;
+      height: 20px;
+      margin: -17px 0 0 -10px;
+      content: ' ';
+      color: $theme_color;
+      font-weight: bold;
+      font-size: 26px;
+      text-align: center;
+      line-height: 22px;
+      background: #fff;
+      border: 1px solid $theme_color;
+      #border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .draggable:after {
+    width: 24px;
+    height: 24px;
+    margin: -18px 0 0 -12px;
+    line-height: 48px;
+    font-size: 30px;
+  }
+}

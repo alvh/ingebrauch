@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lothringer 13. Halle für Gegenwartskunst</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/assets/main.scss"> -->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <!-- <link rel="stylesheet" href="/assets/l.scss"> -->
+  </head>
+  <body>
+
+      <div class="wrapper">
+        <div class="lothringer-slider">
+          <div class="grid__container exhibitSection">
+            <div class="grid__item grid__item-left">
+              <object id="my-svg" class="grid__image " type="image/svg+xml" data="assets/k.svg"></object>
+
+              <!-- <img class="grid__image d-mobile-none" src="assets/img/k.jpg"> -->
+            </div>
+            <div class="grid__item grid__item-right">
+              <h1 class="eventSection__title">Save the date!<br>K2020</h1>
+              <p class="eventSection__teaser">15. Mai – <br>30. August 2020</p>
+            </div>
+          </div>
+          <div class="resize">
+            <div class="grid__container arealSection">
+                <div class="grid__item grid__item-left">
+                  <h1 class="arealSection__title">Lothringer <br>Halle 13</h1>
+
+                  <p>Die Lothringer 13. Halle für Gegenwartskunst, ist eine Einrichtung der Stadt München. <img src="assets/img/L13_1990_109-072-002.jpg" class="text__inline-img"> Als nicht kommerzielle städtische Galerie mit freiem Eintritt, ist die Halle ein Ort für produktiven Austausch zwischen Münchner Kunst- und Kulturschaffenden und internationalen Positionen. Durch spezifische künstlerische (Neu)produktionen und einen Fokus auf diskursive und interdisziplinäre Formate, verstehen wir die Lothringer 13 als einen Raum, in dem künstlerische Produktion, ihre Aushandlung, Präsentation und öffentliche Wahrnehmung zeitlich und räumlich verdichtet eine Reflexion von Gegenwart ermöglicht und diese einem größeren Publikum zugänglich macht.
+                   <p>1980 als Künstlerwerkstatt in einer Haidhauser Fabrikhalle gegründet, entwickelte die Lothringer 13 in wechselnden kuratorischen Besetzungen neue Formate und unterstützte insbesondere junge Künstler*innen und deren Produktionsbedingungen. </p>
+                  <p>Als Entree zur Lothringer13 Halle befindet sich zusätzlich im Vorderhaus der Rroom, der zusätzlich Raum für Veranstaltungen bietet sowie handgemachten Kaffee und Getränken auf Selbstkostenbasis. </p>
+                  <p>
+                    <u>Tür an Tür</u> neben der Halle im Hof ist der Lothringer13_Florida, ein unabhängiger Kunstraum im Lothringer 13 Areal verortet, welcher von einem mehrköpfigen Komitee organisiert wird.
+                  </p>
+                  <p>
+                    Die drei Schilder an der Hausfassade wurden im Sommer 2014 umgestaltet und präsentieren nun eine Arbeit des Hamburger Künstlers Stefan Marx.
+                  </p><hr/>
+                  <p>
+                    Die Lothringer13 Halle wurde von 2014 bis 2019 von Jörg Koopmann und seinem Team verantwortet. Dazu gehörten bis 2017 als Kern die Designerin und Kuratorin Tanja Seiner, und nachfolgend die Künstlerin Rita Hensen. Als internationale Beraterin und Netzwerkerin fungiert seit 2014 die Dänin Lene Harbo Pedersen.
+                    Von Juni 2014 bis Juli 2016 wurde das Programm von dem Kuratoren-Duo Dana Weschke / Jörg Koopmann gestaltet.
+                  </p>
+                  <hr>
+                  <p>
+                    Zum Archiv der Lothringer13 Halle:
+                  </p>
+                  <p>
+                    Archiv 2006–2010 unter Uli Aigner<br>
+                    Archiv 2010–2014 unter Felix Ruhöfer<br>
+                    Archiv 2014-2019 unter Jörg Koopmann</p>
+                </div>
+                <div class="grid__item grid__item-right">
+                  <figure class="d-mobile-none">
+                    <img class="grid__image" src="assets/img/L13_1990_109-072-002.jpg">
+                    <figcaption>Fig.1 - Gründungsfeier, die</figcaption>
+                  </figure>
+                  <figure class="d-mobile-none">
+                    <img class="grid__image" src="assets/img/orga.jpg">
+                    <figcaption>Fig.2 - Areal, Organisation, Struktur</figcaption>
+                  </figure>
+                  <p></p>
+                </div>
+            </div>
+          </div>
+          <span class="handle"></span>
+        </div>
+      </div>
+    <!-- /container -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.5/vivus.min.js"></script>
+
+    <script type="text/javascript" src="./assets/code.js"></script>
+    <script>
+      $("html,body").delay(200).animate({ opacity: 1 }, 700);
+      $(".text__inline-img").click(
+      function(){
+        $(this).toggleClass("text__inline-imglarge")
+      })
+    </script>
+    <script>
+    new Vivus('my-svg', { duration: 100 }, function (myVivus) {
+        myVivus.play(myVivus.getStatus() === 'end' ? -1 : 1);
+      });
+  </script>
+  </body>
+</html>
