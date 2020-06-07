@@ -1,13 +1,4 @@
-/* Mobile */
-
-
-/* Desktop */
-
-
-/* Font */
-
-
-/* Color */
+/* Schrift definitionen */
 
 @font-face {
 	font-family: 'zh';
@@ -26,9 +17,11 @@ html {
 	padding: 10px;
 	opacity: 0;
 	background-color: #333;
-	font-size: 1.3rem;
-	line-height: 1.5rem;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
 }
+
+/* handy */
 
 @media only screen and (max-width: 600px) {
 	.d-mobile-none {
@@ -36,12 +29,14 @@ html {
 	}
 }
 
+/* Stile für desktop */
+
 @media only screen and (min-width: 600px) {
 	.wrapper {
 		margin: 0em;
 		width: 100%;
 	}
-	.lothringer-slider {
+	.alvh-slider {
 		position: relative;
 		overflow: hidden;
 		margin: 0 auto;
@@ -54,6 +49,7 @@ html {
 		width: 50%;
 		overflow: hidden;
 		background-color: white;
+		border:0px solid black
 	}
 	.handle {
 		/* Thin line seperator */
@@ -62,8 +58,8 @@ html {
 		top: 0;
 		bottom: 0;
 		width: 2px;
-		margin-left: -2px;
-		background: #0000ff;
+		margin-left: 2px;
+		background: black;
 		cursor: ew-resize;
 	}
 	.handle:after {
@@ -71,18 +67,18 @@ html {
 		z-index: 99;
 		position: absolute;
 		top: 50vh;
-		width: 20px;
-		height: 20px;
-		margin: -17px 0 0 -10px;
+		width: 40px;
+		height: 40px;
+		margin: -17px 0 0 -20px;
 		content: ' ';
 		color: #0000ff;
 		font-weight: bold;
 		font-size: 26px;
 		text-align: center;
 		line-height: 22px;
-		background: #fff;
-		border: 1px solid #0000ff;
-		#border-radius: 50%;
+		background: red;
+		border: 1px solid red;
+		border-radius: 50%;
 		transition: all 0.3s ease;
 	}
 	.draggable:after {
@@ -94,6 +90,8 @@ html {
 	}
 }
 
+/* Bild rechte seite slide 2 */
+
 .grid__image {
 	width: 65vw;
 }
@@ -104,16 +102,16 @@ html {
 }
 
 .arealSection__title {
-	font-family: "ohno";
+	font-family: "zh";
 	font-size: 50px;
 	line-height: 45px;
-	border-bottom: 1px solid #0000ff;
+	border-bottom: 1px solid #black;
 	padding-bottom: 10px;
 }
 
 .eventSection__title {
 	font-size: 50px;
-	font-family: "ohno";
+	font-family: "zh";
 	border-bottom: 1px solid #fff;
 	padding-bottom: 2px;
 }
@@ -130,37 +128,38 @@ html {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 100vh;
 		grid-column-gap: 20px;
-		hyphens: auto;
-		hyphenate-limit-chars: 6 3 3;
+		/* hyphens: auto; */
+		/* hyphenate-limit-chars: 6 3 3;
 		hyphenate-limit-lines: 2;
 		hyphenate-limit-last: always;
-		hyphenate-limit-zone: 8%;
+		hyphenate-limit-zone: 8%; */
 		overflow-y: scroll;
+
 	}
 	.arealSection {
-		background: linear-gradient(90deg, white 50%, #333 50%);
+		background: linear-gradient(90deg, white 50%, #ffffff 50%);
 	}
 	.exhibitSection {
-		background: linear-gradient(90deg, white 50%, #0000ff 50%);
+		background: linear-gradient(90deg, white 50%, #000000 50%);
 	}
 	.grid__item-left {
-		color: #0000ff;
+		color: #000000;
 		padding-left: 50px;
 		padding-right: 20px;
 	}
 	.grid__item-right {
-		color: #fff;
+		color: #ff0000;
 		padding-top: 20px;
 		padding-left: 20px;
 	}
 	.grid__container p {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 		font-weight: 400;
-		line-height: 1.7rem;
+		line-height: 1.6rem;
 		max-width: 43vw;
 	}
 	.text__inline-img {
-		height: 18px;
+		height: 20px;
 		width: auto;
 		display: inline-block;
 		margin-bottom: 4px;
@@ -182,7 +181,7 @@ html {
 		display: auto;
 	}
 	hr {
-		border: 6px solid #0000ff;
+		border: 6px solid red;
 		border-radius: 5px;
 		max-width: 43vw;
 		margin-left: 0;
