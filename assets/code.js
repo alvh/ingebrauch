@@ -1,6 +1,6 @@
 // INIT SLIDER
 $(document).ready(function() {
-    var slider = $('.lothringer-slider');
+    var slider = $('.alvh-slider');
     var arealSection = $('.arealSection');
     var exhibitSection = $('.exhibitSection');
 
@@ -83,7 +83,7 @@ $(window).resize(function() {
 
 
 
-    var slider = $('.lothringer-slider');
+    var slider = $('.alvh-slider');
     var arealSection = $('.arealSection');
     var exhibitSection = $('.exhibitSection');
 
